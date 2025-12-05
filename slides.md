@@ -5,6 +5,7 @@ author: Technical Writer
 theme: custom-docs
 paginate: true
 footer: 23f2001336@ds.study.iitm.ac.in
+math: true
 ---
 
 <style>
@@ -48,11 +49,15 @@ section.lead h2 { font-size: 1.4em; }
   - PDF
   - PPTX
   - HTML
-- Supports themes, images, math & code
+- Supports:
+  - Custom themes
+  - Background images
+  - **LaTeX math**
+  - Code blocks
 
 ---
 
-<!-- Background image slide (mandatory) -->
+<!-- Background image slide (required) -->
 
 ![bg](https://images.unsplash.com/photo-1519389950473-47ba0277781c)
 
@@ -69,23 +74,20 @@ section.lead h2 { font-size: 1.4em; }
 
 ## Algorithmic Complexity (LaTeX Math ✅)
 
-Time complexity of Merge Sort:
+**Merge Sort time complexity (block LaTeX):**
 
-$$
-T(n) = O(n \log n)
-$$
+$$ T(n) = O(n \log n) $$
 
-Binary Search recurrence:
+**Binary Search recurrence:**
 
-$$
-T(n) = T(n/2) + O(1)
-$$
+$$ T(n) = T(n/2) + O(1) $$
 
-Dynamic Programming relation:
+**Dynamic Programming relation:**
 
-$$
-DP(n) = DP(n-1) + DP(n-2)
-$$
+$$ DP(n) = DP(n-1) + DP(n-2) $$
+
+**Inline example:**  
+Binary search runs in **$O(\log n)$** time, while a simple linear scan runs in **$O(n)$** time.
 
 ---
 
