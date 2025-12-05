@@ -13,7 +13,7 @@ section {
   background-color: #0f172a;
   color: #e5e7eb;
   font-size: 26px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 h1, h2 {
@@ -25,17 +25,10 @@ code {
   color: #f8fafc;
   padding: 6px 8px;
   border-radius: 6px;
-  font-size: 0.85em;
 }
 
-/* Custom class for lead slide */
-section.lead h1 {
-  font-size: 2.6em;
-}
-
-section.lead h2 {
-  font-size: 1.4em;
-}
+section.lead h1 { font-size: 2.6em; }
+section.lead h2 { font-size: 1.4em; }
 </style>
 
 <!-- _class: lead -->
@@ -49,58 +42,54 @@ section.lead h2 {
 
 ## Why Marp for Documentation?
 
-- Markdown-based **single source of truth**
-- Easy to track in **Git / GitHub**
-- Can be converted to:
+- Markdown-based documentation
+- Easy Git version control
+- Converts to:
   - PDF
-  - PowerPoint (PPTX)
-  - HTML slides
-- Supports:
-  - Custom themes
-  - Background images
-  - Math formulas
-  - Code blocks
+  - PPTX
+  - HTML
+- Supports themes, images, math & code
 
 ---
 
-<!-- This slide has a background image (required by assignment) -->
+<!-- Background image slide (mandatory) -->
 
 ![bg](https://images.unsplash.com/photo-1519389950473-47ba0277781c)
 
-# System Architecture Overview
+# System Architecture
 
-- Cloud-native deployment
-- Microservices-based design
-- REST + gRPC APIs
-- Central documentation hub
+- Cloud-native
+- Microservices
+- CI/CD enabled
+- API-first design
 
 📧 23f2001336@ds.study.iitm.ac.in
 
 ---
 
-## Algorithmic Complexity (Math ✅)
+## Algorithmic Complexity (LaTeX Math ✅)
 
-For a typical optimized search routine:
+Time complexity of Merge Sort:
 
-\[
+$$
 T(n) = O(n \log n)
-\]
+$$
 
-Dynamic programming recurrence used in our analytics engine:
+Binary Search recurrence:
 
-\[
+$$
+T(n) = T(n/2) + O(1)
+$$
+
+Dynamic Programming relation:
+
+$$
 DP(n) = DP(n-1) + DP(n-2)
-\]
-
-Used in:
-
-- Search optimization
-- Recommendation pipelines
-- Caching and precomputation
+$$
 
 ---
 
-## Custom-Styled Code Block
+## Custom Styled Code Block
 
 ```python
 def binary_search(arr, x):
