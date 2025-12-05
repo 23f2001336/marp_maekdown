@@ -52,7 +52,7 @@ section.lead h2 { font-size: 1.4em; }
 - Supports:
   - Custom themes
   - Background images
-  - **LaTeX math**
+  - **LaTeX mathematical equations**
   - Code blocks
 
 ---
@@ -74,20 +74,28 @@ section.lead h2 { font-size: 1.4em; }
 
 ## Algorithmic Complexity (LaTeX Math ✅)
 
-**Merge Sort time complexity (block LaTeX):**
+Below are **explicit LaTeX equations** for algorithmic complexity:
 
-$$ T(n) = O(n \log n) $$
+**Inline LaTeX examples:**
 
-**Binary Search recurrence:**
+This algorithm runs in time $O(n^2)$ and space $S(n) = \Theta(n)$,  
+while an optimized variant can achieve $O(n \log n)$ time.
 
-$$ T(n) = T(n/2) + O(1) $$
+**Block LaTeX with `$$ ... $$`:**
 
-**Dynamic Programming relation:**
+$$ T(n) = 3n^2 + 2n + 1 $$
 
-$$ DP(n) = DP(n-1) + DP(n-2) $$
+**LaTeX display math with `\[ ... \]`:**
 
-**Inline example:**  
-Binary search runs in **$O(\log n)$** time, while a simple linear scan runs in **$O(n)$** time.
+\[ T(n) = O(n \log n) \]
+
+**LaTeX environment with `\begin{equation} ... \end{equation}`:**
+
+\begin{equation}
+T(n) = T\left(\frac{n}{2}\right) + O(1)
+\end{equation}
+
+All of the above are written using **standard LaTeX math syntax**.
 
 ---
 
@@ -106,4 +114,4 @@ def binary_search(arr, x):
         else:
             high = mid - 1
 
-    return -1
+    re
